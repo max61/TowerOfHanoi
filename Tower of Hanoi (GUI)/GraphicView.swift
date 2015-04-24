@@ -14,6 +14,8 @@ class GraphicView: NSView {
         super.drawRect(dirtyRect)
 
         // Drawing code here.
+        
+        NSFrameRect(NSRect(x: 0, y: 0, width: 100, height: 20))
     }
     
 }
