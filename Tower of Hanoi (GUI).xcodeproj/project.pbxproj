@@ -11,6 +11,8 @@
 		342DBEED1AEA267B0098309B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEC1AEA267B0098309B /* Images.xcassets */; };
 		342DBEF01AEA267B0098309B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEE1AEA267B0098309B /* MainMenu.xib */; };
 		342DBEFC1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */; };
+		34B8999F1AEA2941004DA408 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8999D1AEA2941004DA408 /* MainWindowController.swift */; };
+		34B899A01AEA2941004DA408 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B8999E1AEA2941004DA408 /* MainWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		342DBEF51AEA267B0098309B /* Tower of Hanoi (GUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tower of Hanoi (GUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		342DBEFA1AEA267B0098309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_Hanoi__GUI_Tests.swift; sourceTree = "<group>"; };
+		34B8999D1AEA2941004DA408 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		34B8999E1AEA2941004DA408 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				342DBEEC1AEA267B0098309B /* Images.xcassets */,
 				342DBEEE1AEA267B0098309B /* MainMenu.xib */,
 				342DBEE81AEA267B0098309B /* Supporting Files */,
+				34B8999D1AEA2941004DA408 /* MainWindowController.swift */,
+				34B8999E1AEA2941004DA408 /* MainWindowController.xib */,
 			);
 			path = "Tower of Hanoi (GUI)";
 			sourceTree = "<group>";
@@ -187,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				342DBEED1AEA267B0098309B /* Images.xcassets in Resources */,
+				34B899A01AEA2941004DA408 /* MainWindowController.xib in Resources */,
 				342DBEF01AEA267B0098309B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B8999F1AEA2941004DA408 /* MainWindowController.swift in Sources */,
 				342DBEEB1AEA267B0098309B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +404,7 @@
 				342DBF011AEA267B0098309B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		342DBF021AEA267B0098309B /* Build configuration list for PBXNativeTarget "Tower of Hanoi (GUI)Tests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +413,7 @@
 				342DBF041AEA267B0098309B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
