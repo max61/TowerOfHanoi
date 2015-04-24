@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		342DBEEB1AEA267B0098309B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DBEEA1AEA267B0098309B /* AppDelegate.swift */; };
+		342DBEED1AEA267B0098309B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEC1AEA267B0098309B /* Images.xcassets */; };
+		342DBEF01AEA267B0098309B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEE1AEA267B0098309B /* MainMenu.xib */; };
+		342DBEFC1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		342DBEF61AEA267B0098309B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342DBEDD1AEA267A0098309B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 342DBEE41AEA267A0098309B;
+			remoteInfo = "Tower of Hanoi (GUI)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		342DBEE51AEA267B0098309B /* Tower of Hanoi (GUI).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tower of Hanoi (GUI).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		342DBEE91AEA267B0098309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342DBEEA1AEA267B0098309B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		342DBEEC1AEA267B0098309B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		342DBEEF1AEA267B0098309B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		342DBEF51AEA267B0098309B /* Tower of Hanoi (GUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tower of Hanoi (GUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		342DBEFA1AEA267B0098309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_Hanoi__GUI_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		342DBEE21AEA267A0098309B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342DBEF21AEA267B0098309B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342DBEDC1AEA267A0098309B = {
+			isa = PBXGroup;
+			children = (
+				342DBEE71AEA267B0098309B /* Tower of Hanoi (GUI) */,
+				342DBEF81AEA267B0098309B /* Tower of Hanoi (GUI)Tests */,
+				342DBEE61AEA267B0098309B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		342DBEE61AEA267B0098309B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342DBEE51AEA267B0098309B /* Tower of Hanoi (GUI).app */,
+				342DBEF51AEA267B0098309B /* Tower of Hanoi (GUI)Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		342DBEE71AEA267B0098309B /* Tower of Hanoi (GUI) */ = {
+			isa = PBXGroup;
+			children = (
+				342DBEEA1AEA267B0098309B /* AppDelegate.swift */,
+				342DBEEC1AEA267B0098309B /* Images.xcassets */,
+				342DBEEE1AEA267B0098309B /* MainMenu.xib */,
+				342DBEE81AEA267B0098309B /* Supporting Files */,
+			);
+			path = "Tower of Hanoi (GUI)";
+			sourceTree = "<group>";
+		};
+		342DBEE81AEA267B0098309B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342DBEE91AEA267B0098309B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		342DBEF81AEA267B0098309B /* Tower of Hanoi (GUI)Tests */ = {
+			isa = PBXGroup;
+			children = (
+				342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */,
+				342DBEF91AEA267B0098309B /* Supporting Files */,
+			);
+			path = "Tower of Hanoi (GUI)Tests";
+			sourceTree = "<group>";
+		};
+		342DBEF91AEA267B0098309B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				342DBEFA1AEA267B0098309B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		342DBEE41AEA267A0098309B /* Tower of Hanoi (GUI) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342DBEFF1AEA267B0098309B /* Build configuration list for PBXNativeTarget "Tower of Hanoi (GUI)" */;
+			buildPhases = (
+				342DBEE11AEA267A0098309B /* Sources */,
+				342DBEE21AEA267A0098309B /* Frameworks */,
+				342DBEE31AEA267A0098309B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tower of Hanoi (GUI)";
+			productName = "Tower of Hanoi (GUI)";
+			productReference = 342DBEE51AEA267B0098309B /* Tower of Hanoi (GUI).app */;
+			productType = "com.apple.product-type.application";
+		};
+		342DBEF41AEA267B0098309B /* Tower of Hanoi (GUI)Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342DBF021AEA267B0098309B /* Build configuration list for PBXNativeTarget "Tower of Hanoi (GUI)Tests" */;
+			buildPhases = (
+				342DBEF11AEA267B0098309B /* Sources */,
+				342DBEF21AEA267B0098309B /* Frameworks */,
+				342DBEF31AEA267B0098309B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				342DBEF71AEA267B0098309B /* PBXTargetDependency */,
+			);
+			name = "Tower of Hanoi (GUI)Tests";
+			productName = "Tower of Hanoi (GUI)Tests";
+			productReference = 342DBEF51AEA267B0098309B /* Tower of Hanoi (GUI)Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		342DBEDD1AEA267A0098309B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "C&A Computer Consultants Ltd";
+				TargetAttributes = {
+					342DBEE41AEA267A0098309B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					342DBEF41AEA267B0098309B = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 342DBEE41AEA267A0098309B;
+					};
+				};
+			};
+			buildConfigurationList = 342DBEE01AEA267A0098309B /* Build configuration list for PBXProject "Tower of Hanoi (GUI)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 342DBEDC1AEA267A0098309B;
+			productRefGroup = 342DBEE61AEA267B0098309B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				342DBEE41AEA267A0098309B /* Tower of Hanoi (GUI) */,
+				342DBEF41AEA267B0098309B /* Tower of Hanoi (GUI)Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		342DBEE31AEA267A0098309B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342DBEED1AEA267B0098309B /* Images.xcassets in Resources */,
+				342DBEF01AEA267B0098309B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342DBEF31AEA267B0098309B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		342DBEE11AEA267A0098309B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342DBEEB1AEA267B0098309B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		342DBEF11AEA267B0098309B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				342DBEFC1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		342DBEF71AEA267B0098309B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 342DBEE41AEA267A0098309B /* Tower of Hanoi (GUI) */;
+			targetProxy = 342DBEF61AEA267B0098309B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		342DBEEE1AEA267B0098309B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				342DBEEF1AEA267B0098309B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		342DBEFD1AEA267B0098309B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		342DBEFE1AEA267B0098309B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		342DBF001AEA267B0098309B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tower of Hanoi (GUI)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		342DBF011AEA267B0098309B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tower of Hanoi (GUI)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		342DBF031AEA267B0098309B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tower of Hanoi (GUI)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tower of Hanoi (GUI).app/Contents/MacOS/Tower of Hanoi (GUI)";
+			};
+			name = Debug;
+		};
+		342DBF041AEA267B0098309B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tower of Hanoi (GUI)Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tower of Hanoi (GUI).app/Contents/MacOS/Tower of Hanoi (GUI)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		342DBEE01AEA267A0098309B /* Build configuration list for PBXProject "Tower of Hanoi (GUI)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342DBEFD1AEA267B0098309B /* Debug */,
+				342DBEFE1AEA267B0098309B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		342DBEFF1AEA267B0098309B /* Build configuration list for PBXNativeTarget "Tower of Hanoi (GUI)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342DBF001AEA267B0098309B /* Debug */,
+				342DBF011AEA267B0098309B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		342DBF021AEA267B0098309B /* Build configuration list for PBXNativeTarget "Tower of Hanoi (GUI)Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				342DBF031AEA267B0098309B /* Debug */,
+				342DBF041AEA267B0098309B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 342DBEDD1AEA267A0098309B /* Project object */;
+}
