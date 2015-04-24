@@ -15,20 +15,11 @@ class GraphicView: NSView {
 
         // Drawing code here.
         
-        NSGraphicsContext.saveGraphicsState()
+        let disc = Disc(x: 10, y: 5, width: 100)
         
-        let disc = NSRect(x: 0, y: 0, width: 100, height: 15)
-     
-        NSColor.redColor().set()
-        NSRectFill(disc)
-     
-        NSColor.blackColor().set()
+        disc.draw()
         
-        // NSFrameRect(disc)
         
-        NSFrameRectWithWidth(disc, 3)
-        
-        NSGraphicsContext.restoreGraphicsState()
     }
     
 }
