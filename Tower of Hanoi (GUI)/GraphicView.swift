@@ -15,6 +15,7 @@ class GraphicView: NSView {
 
         // Drawing code here.
         
+        NSGraphicsContext.saveGraphicsState()
         
         let disc = NSRect(x: 0, y: 0, width: 100, height: 15)
      
@@ -26,6 +27,8 @@ class GraphicView: NSView {
         // NSFrameRect(disc)
         
         NSFrameRectWithWidth(disc, 3)
+        
+        NSGraphicsContext.restoreGraphicsState()
     }
     
 }
