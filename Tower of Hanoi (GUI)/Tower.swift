@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-var towers = Array<Tower>()
+var towers : Array<Tower>!
 
 class Tower {
     var discs = Array<Disc>()
@@ -18,9 +18,14 @@ class Tower {
         towers.append(self)
     }
     
-    class func list() -> Array<Tower> {
+    class func list() -> Array<Tower>? {
         return towers
     }
+    
+    class func reset() {
+        towers = Array<Tower>()
+    }
+    
     
     class func moveFrom(from : Int, to : Int) {
         towers[to].addDisc(towers[from].removeDisc())

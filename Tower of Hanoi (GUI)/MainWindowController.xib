@@ -7,6 +7,8 @@
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="Tower_of_Hanoi__GUI_" customModuleProvider="target">
             <connections>
                 <outlet property="graphicView" destination="G2b-cT-igO" id="cYM-3P-2LZ"/>
+                <outlet property="lblDiscCnt" destination="3b3-7m-D98" id="Fyh-fm-mLv"/>
+                <outlet property="stepDiscCnt" destination="ede-Dc-eEd" id="X3A-ai-iHq"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -34,6 +36,21 @@
                             <action selector="move:" target="-2" id="t6h-I5-xQb"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-7m-D98">
+                        <rect key="frame" x="20" y="51" width="38" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="KMN-qz-wFi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ede-Dc-eEd">
+                        <rect key="frame" x="61" y="45" width="19" height="27"/>
+                        <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="10" doubleValue="5" id="26C-H1-XJK"/>
+                        <connections>
+                            <action selector="stepDiscCnt:" target="-2" id="02p-5y-Tdv"/>
+                        </connections>
+                    </stepper>
                 </subviews>
             </view>
             <connections>

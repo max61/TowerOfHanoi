@@ -11,9 +11,52 @@ import Cocoa
 class MainWindowController: NSWindowController {
 
     @IBOutlet weak var graphicView: GraphicView!
+    @IBOutlet weak var lblDiscCnt: NSTextField!
+    @IBOutlet weak var stepDiscCnt: NSStepper!
+    
+    
     
     var timer : NSTimer!
     var hanoi : TowerHanoi!
+    private var _discCnt : Int = 5
+    
+    var discCnt : Int {
+        get {
+            return _discCnt
+        }
+
+        set {
+            _discCnt = newValue
+            
+            
+            Tower.reset()
+            
+            let tower1 = Tower()
+            
+            var x : CGFloat = 0
+            var width : CGFloat = 200
+            var height : CGFloat = 20
+            var step : CGFloat = 8
+            
+            
+            for i in 0 ..< _discCnt {
+                tower1.addDisc(Disc(x: x, y: 0, width: width, height: height))
+                
+                x += step
+                width -= (2 * step)
+            }
+            
+            let tower2 = Tower()
+            let tower3 = Tower()
+            graphicView.needsDisplay = true
+            
+            hanoi = TowerHanoi(discCnt: _discCnt)
+
+            
+
+            
+        }
+    }
     
     
     override var windowNibName: String? {
@@ -26,29 +69,10 @@ class MainWindowController: NSWindowController {
 
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
         
+        lblDiscCnt.integerValue = stepDiscCnt.integerValue
         
-        let tower1 = Tower()
-        
-        var x : CGFloat = 0
-        var width : CGFloat = 200
-        var height : CGFloat = 20
-        var step : CGFloat = 8
-    
-        
-        for i in 0 ..< 10 {
-            tower1.addDisc(Disc(x: x, y: 0, width: width, height: height))
-            
-            x += step
-            width -= (2 * step)
-        }
-        
-        let tower2 = Tower()
-        let tower3 = Tower()
-        graphicView.needsDisplay = true
-        
-        
-        hanoi = TowerHanoi(discCnt: 10)
- 
+        discCnt = stepDiscCnt.integerValue
+  
         /*
         Tower.moveFrom(0, to: 2)
         graphicView.needsDisplay = true
@@ -66,7 +90,7 @@ class MainWindowController: NSWindowController {
     
     @IBAction func move(sender: AnyObject) {
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("update"), userInfo: nil, repeats: true);
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: Selector("update"), userInfo: nil, repeats: true);
         
 
         /*
@@ -83,6 +107,10 @@ class MainWindowController: NSWindowController {
         
     }
     
+    @IBAction func stepDiscCnt(sender: AnyObject) {
+        lblDiscCnt.integerValue = stepDiscCnt.integerValue
+        discCnt = stepDiscCnt.integerValue
+    }
     
     func update() {
         // Tower.moveFrom(0, to: 2)

@@ -21,9 +21,11 @@ class GraphicView: NSView {
 
         NSGraphicsContext.saveGraphicsState()
         
-        for tower in Tower.list() {
-            tower.draw()
-            xForm.concat()
+        if (Tower.list() != nil) {
+            for tower in Tower.list()! {
+                tower.draw()
+                xForm.concat()
+            }
         }
         
         NSGraphicsContext.restoreGraphicsState()
