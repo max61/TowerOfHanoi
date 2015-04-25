@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 class Tower {
     var discs = Array<Disc>()
@@ -24,9 +25,26 @@ class Tower {
     }
     
     func draw() {
+        var xForm = NSAffineTransform()
+        
+        var yXlate : CGFloat = 0
         for disc in discs {
+            NSGraphicsContext.saveGraphicsState()
+            
+            xForm.translateXBy(0, yBy: yXlate)
+            xForm.concat()
+            
+            
             disc.draw()
+            
+            yXlate += 20
+           
+            
+            NSGraphicsContext.restoreGraphicsState()
+
         }
+        
+
     }
     
 }
