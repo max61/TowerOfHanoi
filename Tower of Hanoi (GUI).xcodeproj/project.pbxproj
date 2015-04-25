@@ -11,6 +11,7 @@
 		342DBEED1AEA267B0098309B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEC1AEA267B0098309B /* Images.xcassets */; };
 		342DBEF01AEA267B0098309B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342DBEEE1AEA267B0098309B /* MainMenu.xib */; };
 		342DBEFC1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */; };
+		34649D3D1AEB8A9F006F66FF /* TowerHanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34649D3C1AEB8A9F006F66FF /* TowerHanoi.swift */; };
 		3468882D1AEB1280008BEAFE /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468882C1AEB1280008BEAFE /* Tower.swift */; };
 		347A09791AEA71A500F996D3 /* Disc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347A09781AEA71A500F996D3 /* Disc.swift */; };
 		34B8999F1AEA2941004DA408 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B8999D1AEA2941004DA408 /* MainWindowController.swift */; };
@@ -37,6 +38,7 @@
 		342DBEF51AEA267B0098309B /* Tower of Hanoi (GUI)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tower of Hanoi (GUI)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		342DBEFA1AEA267B0098309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342DBEFB1AEA267B0098309B /* Tower_of_Hanoi__GUI_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tower_of_Hanoi__GUI_Tests.swift; sourceTree = "<group>"; };
+		34649D3C1AEB8A9F006F66FF /* TowerHanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowerHanoi.swift; sourceTree = "<group>"; };
 		3468882C1AEB1280008BEAFE /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
 		347A09781AEA71A500F996D3 /* Disc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disc.swift; sourceTree = "<group>"; };
 		34B8999D1AEA2941004DA408 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				34B899A11AEA29F0004DA408 /* GraphicView.swift */,
 				347A09781AEA71A500F996D3 /* Disc.swift */,
 				3468882C1AEB1280008BEAFE /* Tower.swift */,
+				34649D3C1AEB8A9F006F66FF /* TowerHanoi.swift */,
 			);
 			path = "Tower of Hanoi (GUI)";
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				3468882D1AEB1280008BEAFE /* Tower.swift in Sources */,
 				342DBEEB1AEA267B0098309B /* AppDelegate.swift in Sources */,
 				34B899A21AEA29F0004DA408 /* GraphicView.swift in Sources */,
+				34649D3D1AEB8A9F006F66FF /* TowerHanoi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

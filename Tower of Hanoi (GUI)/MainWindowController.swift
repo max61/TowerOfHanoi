@@ -12,6 +12,10 @@ class MainWindowController: NSWindowController {
 
     @IBOutlet weak var graphicView: GraphicView!
     
+    var timer : NSTimer!
+    var hanoi : TowerHanoi!
+    
+    
     override var windowNibName: String? {
         return "MainWindowController"
     }
@@ -42,6 +46,8 @@ class MainWindowController: NSWindowController {
         let tower3 = Tower()
         graphicView.needsDisplay = true
         
+        
+        hanoi = TowerHanoi(discCnt: 10)
  
         /*
         Tower.moveFrom(0, to: 2)
@@ -59,6 +65,11 @@ class MainWindowController: NSWindowController {
     }
     
     @IBAction func move(sender: AnyObject) {
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("update"), userInfo: nil, repeats: true);
+        
+
+        /*
         Tower.moveFrom(0, to: 2)
         graphicView.needsDisplay = true
         sleep(2)
@@ -66,8 +77,28 @@ class MainWindowController: NSWindowController {
         Tower.moveFrom(0, to: 1)
         graphicView.needsDisplay = true
     
+*/
         
         
         
     }
+    
+    
+    func update() {
+        // Tower.moveFrom(0, to: 2)
+        let result = hanoi.getNextResult()
+        if (result != nil) {
+            Tower.moveFrom(result!.from, to: result!.to)
+            graphicView.needsDisplay = true
+        } else {
+            timer.invalidate()
+            timer = nil
+        }
+        
+        
+        
+        
+    }
+    
+    
 }
