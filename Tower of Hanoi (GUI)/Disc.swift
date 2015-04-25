@@ -13,13 +13,13 @@ class Disc {
     
     var rect : NSRect
     
-    var aspectRatio : CGFloat = 0.15
+
     var outlineColor = NSColor.blackColor()
     var fillColor = NSColor.grayColor()
     
     
-    init(x : CGFloat, y : CGFloat, width : CGFloat) {
-        self.rect = NSRect(x: x, y: y, width: width, height: width * aspectRatio)
+    init(x : CGFloat, y : CGFloat, width : CGFloat, height : CGFloat) {
+        self.rect = NSRect(x: x, y: y, width: width, height: height)
         
     }
     
