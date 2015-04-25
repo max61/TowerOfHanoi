@@ -25,8 +25,19 @@ class MainWindowController: NSWindowController {
         
         let tower = Tower()
         
-        tower.addDisc(Disc(x: 0, y: 0, width: 200))
-        tower.addDisc(Disc(x: 30, y: 30, width: 140))
+        var x : CGFloat = 0
+        var width : CGFloat = 100
+        var height : CGFloat = 20
+        var step : CGFloat = 8
+    
+        
+        for i in 0 ..< 10 {
+            tower.addDisc(Disc(x: x, y: 0, width: width, height: height))
+            
+            x += step
+            width -= (2 * step)
+        }
+        
         
         graphicView.tower = tower
         
