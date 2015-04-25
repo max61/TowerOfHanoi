@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="graphicView" destination="G2b-cT-igO" id="cYM-3P-2LZ"/>
                 <outlet property="lblDiscCnt" destination="3b3-7m-D98" id="Fyh-fm-mLv"/>
+                <outlet property="sliderSpeed" destination="6oi-2V-OCn" id="trh-3k-zUT"/>
                 <outlet property="stepDiscCnt" destination="ede-Dc-eEd" id="X3A-ai-iHq"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
@@ -36,14 +37,6 @@
                             <action selector="move:" target="-2" id="t6h-I5-xQb"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-7m-D98">
-                        <rect key="frame" x="20" y="51" width="38" height="17"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="KMN-qz-wFi">
-                            <font key="font" metaFont="system"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ede-Dc-eEd">
                         <rect key="frame" x="61" y="45" width="19" height="27"/>
                         <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="10" doubleValue="5" id="26C-H1-XJK"/>
@@ -51,6 +44,22 @@
                             <action selector="stepDiscCnt:" target="-2" id="02p-5y-Tdv"/>
                         </connections>
                     </stepper>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdS-yn-oZ4">
+                        <rect key="frame" x="83" y="46" width="199" height="21"/>
+                        <sliderCell key="cell" state="on" alignment="left" maxValue="9" doubleValue="5" tickMarkPosition="above" sliderType="linear" id="6oi-2V-OCn">
+                            <connections>
+                                <action selector="speedCtl:" target="-2" id="meW-dC-OyB"/>
+                            </connections>
+                        </sliderCell>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-7m-D98">
+                        <rect key="frame" x="26" y="51" width="38" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Label" id="KMN-qz-wFi">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <connections>

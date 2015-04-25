@@ -14,9 +14,10 @@ class MainWindowController: NSWindowController {
     @IBOutlet weak var lblDiscCnt: NSTextField!
     @IBOutlet weak var stepDiscCnt: NSStepper!
     
+    @IBOutlet weak var sliderSpeed: NSSliderCell!
     
     
-    var timer : NSTimer!
+    var timer : NSTimer?
     var hanoi : TowerHanoi!
     private var _discCnt : Int = 5
     
@@ -89,9 +90,7 @@ class MainWindowController: NSWindowController {
     }
     
     @IBAction func move(sender: AnyObject) {
-        
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: Selector("update"), userInfo: nil, repeats: true);
-        
+        setTimer()
 
         /*
         Tower.moveFrom(0, to: 2)
@@ -103,6 +102,12 @@ class MainWindowController: NSWindowController {
     
 */
         
+        
+        
+    }
+    
+    @IBAction func speedCtl(sender: AnyObject) {
+        setTimer()
         
         
     }
@@ -119,13 +124,26 @@ class MainWindowController: NSWindowController {
             Tower.moveFrom(result!.from, to: result!.to)
             graphicView.needsDisplay = true
         } else {
-            timer.invalidate()
+            timer!.invalidate()
             timer = nil
         }
         
         
         
         
+    }
+    
+    func setTimer() {
+        if (timer != nil) {
+            timer?.invalidate()
+        }
+        
+        let timeInterval : NSTimeInterval =  (10 - sliderSpeed.doubleValue) * 0.1
+    
+        timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: Selector("update"), userInfo: nil, repeats: true);
+        
+        
+
     }
     
     
