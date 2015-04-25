@@ -10,23 +10,23 @@ import Cocoa
 
 class GraphicView: NSView {
     
-    var tower : Tower!
-    
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
 
         // Drawing code here.
         
-        /*
-        let disc = Disc(x: 10, y: 5, width: 100)
+        let xForm = NSAffineTransform()
+        xForm.translateXBy(250, yBy: 0)
+
+        NSGraphicsContext.saveGraphicsState()
         
-        disc.draw()
-        */
-        
-        if (tower != nil) {
+        for tower in Tower.list() {
             tower.draw()
+            xForm.concat()
         }
+        
+        NSGraphicsContext.restoreGraphicsState()
         
     }
     

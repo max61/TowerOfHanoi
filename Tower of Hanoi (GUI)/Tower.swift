@@ -9,12 +9,23 @@
 import Foundation
 import Cocoa
 
+var towers = Array<Tower>()
+
 class Tower {
     var discs = Array<Disc>()
     
     init() {
-        
+        towers.append(self)
     }
+    
+    class func list() -> Array<Tower> {
+        return towers
+    }
+    
+    class func moveFrom(from : Int, to : Int) {
+        towers[to].addDisc(towers[from].removeDisc())
+    }
+    
     
     func addDisc(disc : Disc) {
         discs.append(disc)
@@ -25,24 +36,25 @@ class Tower {
     }
     
     func draw() {
-        var xForm = NSAffineTransform()
+        let xForm = NSAffineTransform()
+        xForm.translateXBy(0, yBy: 20)
         
-        var yXlate : CGFloat = 0
+        
+        NSGraphicsContext.saveGraphicsState()
+
         for disc in discs {
-            NSGraphicsContext.saveGraphicsState()
             
-            xForm.translateXBy(0, yBy: yXlate)
-            xForm.concat()
             
             
             disc.draw()
             
-            yXlate += 20
-           
+            xForm.concat()
             
-            NSGraphicsContext.restoreGraphicsState()
+            
 
         }
+
+        NSGraphicsContext.restoreGraphicsState()
         
 
     }

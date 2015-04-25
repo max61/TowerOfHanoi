@@ -15,21 +15,31 @@
         <window title="Tower of Hanoi" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="686" height="586"/>
+            <rect key="contentRect" x="196" y="240" width="900" height="586"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="-5" width="686" height="586"/>
+                <rect key="frame" x="0.0" y="0.0" width="900" height="586"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-cT-igO" customClass="GraphicView" customModule="Tower_of_Hanoi__GUI_" customModuleProvider="target">
-                        <rect key="frame" x="20" y="92" width="646" height="494"/>
+                        <rect key="frame" x="20" y="92" width="860" height="494"/>
                     </customView>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-QG-eg6">
+                        <rect key="frame" x="409" y="44" width="82" height="32"/>
+                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qc5-wr-ei7">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="move:" target="-2" id="t6h-I5-xQb"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="397" y="409"/>
+            <point key="canvasLocation" x="504" y="409"/>
         </window>
     </objects>
 </document>
