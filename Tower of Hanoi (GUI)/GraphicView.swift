@@ -9,16 +9,24 @@
 import Cocoa
 
 class GraphicView: NSView {
+    
+    var tower : Tower!
+    
 
     override func drawRect(dirtyRect: NSRect) {
         super.drawRect(dirtyRect)
 
         // Drawing code here.
         
+        /*
         let disc = Disc(x: 10, y: 5, width: 100)
         
         disc.draw()
+        */
         
+        if (tower != nil) {
+            tower.draw()
+        }
         
     }
     
