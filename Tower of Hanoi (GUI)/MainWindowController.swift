@@ -20,6 +20,12 @@ class MainWindowController: NSWindowController {
     var timer : NSTimer?
     var hanoi : TowerHanoi!
     private var _discCnt : Int = 5
+
+    
+    override var windowNibName: String? {
+        return "MainWindowController"
+    }
+
     
     var discCnt : Int {
         get {
@@ -33,36 +39,24 @@ class MainWindowController: NSWindowController {
             Tower.reset()
             
             let tower1 = Tower()
-            
-            var x : CGFloat = 0
-            var width : CGFloat = 200
-            var height : CGFloat = 20
-            var step : CGFloat = 8
-            
-            
-            for i in 0 ..< _discCnt {
-                tower1.addDisc(Disc(x: x, y: 0, width: width, height: height))
-                
-                x += step
-                width -= (2 * step)
-            }
-            
             let tower2 = Tower()
             let tower3 = Tower()
-            graphicView.needsDisplay = true
+
+
+            for i in 0 ..< _discCnt {
+                tower1.addDisc(Disc(discNo: i))
+            }
+            
             
             hanoi = TowerHanoi(discCnt: _discCnt)
 
+            graphicView.needsDisplay = true
             
 
             
         }
     }
     
-    
-    override var windowNibName: String? {
-        return "MainWindowController"
-    }
     
     
     override func windowDidLoad() {
@@ -74,16 +68,6 @@ class MainWindowController: NSWindowController {
         
         discCnt = stepDiscCnt.integerValue
   
-        /*
-        Tower.moveFrom(0, to: 2)
-        graphicView.needsDisplay = true
-        sleep(1)
-
-        Tower.moveFrom(0, to: 1)
-        graphicView.needsDisplay = true
-        sleep(1)
-
-*/
         
         
         
@@ -91,24 +75,11 @@ class MainWindowController: NSWindowController {
     
     @IBAction func move(sender: AnyObject) {
         setTimer()
-
-        /*
-        Tower.moveFrom(0, to: 2)
-        graphicView.needsDisplay = true
-        sleep(2)
-        
-        Tower.moveFrom(0, to: 1)
-        graphicView.needsDisplay = true
-    
-*/
-        
-        
         
     }
     
     @IBAction func speedCtl(sender: AnyObject) {
         setTimer()
-        
         
     }
     
@@ -127,9 +98,6 @@ class MainWindowController: NSWindowController {
             timer!.invalidate()
             timer = nil
         }
-        
-        
-        
         
     }
     

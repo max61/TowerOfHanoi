@@ -9,6 +9,11 @@
 import Foundation
 import Cocoa
 
+var defaultWidth : CGFloat = 200
+var defaultHeight : CGFloat = 20
+var defaultStep : CGFloat = 8
+var defaultX : CGFloat = 0
+
 class Disc {
     
     var rect : NSRect
@@ -18,8 +23,12 @@ class Disc {
     var fillColor = NSColor.grayColor()
     
     
-    init(x : CGFloat, y : CGFloat, width : CGFloat, height : CGFloat) {
-        self.rect = NSRect(x: x, y: y, width: width, height: height)
+    init(discNo : Int) {
+        let fDiscNo = CGFloat(discNo)
+        let x = defaultStep * fDiscNo
+        let width = defaultWidth - 2 * x
+        
+        self.rect = NSRect(x: x, y: 0, width: width, height: defaultHeight)
         
     }
     
@@ -35,6 +44,10 @@ class Disc {
         
         NSGraphicsContext.restoreGraphicsState()
 
+    }
+    
+    class func height() -> CGFloat {
+        return defaultHeight
     }
     
     

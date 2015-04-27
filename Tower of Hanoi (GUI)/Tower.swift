@@ -42,14 +42,12 @@ class Tower {
     
     func draw() {
         let xForm = NSAffineTransform()
-        xForm.translateXBy(0, yBy: 20)
+        xForm.translateXBy(0, yBy: Disc.height())
         
         
         NSGraphicsContext.saveGraphicsState()
 
         for disc in discs {
-            
-            
             
             disc.draw()
             

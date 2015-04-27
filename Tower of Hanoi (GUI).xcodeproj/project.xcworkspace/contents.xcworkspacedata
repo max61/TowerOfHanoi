@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tower of Hanoi (GUI).xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
